@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Luminark</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <!-- Navbar -->
+  <nav class="navbar">
+    <div class="logo">
+      <img src="logo.png" alt="Luminark Logo" class="logo-img">
+      Luminark
+    </div>
+    <ul class="nav-links">
+      <li><a href="#home">Home</a></li>
+      <li><a href="#about-section">About</a></li>
+      <li><a href="cart.html" id="cart-link">Cart <span id="cart-count" class="cart-count">0</span></a></li>
+    </ul>
+  </nav>
+
+  <div class="navbar-spacer"></div>
+
+  <!-- Hero Section -->
+  <header class="hero" id="home">
+    <h1>Welcome to Luminark</h1>
+  </header>
+
+  <!-- Products -->
+  <section class="products">
+    <h2>Our Products</h2>
+    <div class="product-grid">
+      <div class="product-card">
+        <img src="1.png" alt="Product 1">
+        <h3>Product 1</h3>
+        <p>$49.99</p>
+        <div class="product-buttons">
+          <button class="add-to-cart">Add to Cart</button>
+          <button class="buy-now">Buy Now</button>
+        </div>
+      </div>
+      <div class="product-card">
+        <img src="2.png" alt="Product 2">
+        <h3>Product 2</h3>
+        <p>$59.99</p>
+        <div class="product-buttons">
+          <button class="add-to-cart">Add to Cart</button>
+          <button class="buy-now">Buy Now</button>
+        </div>
+      </div>
+      <div class="product-card">
+        <img src="3.png" alt="Product 3">
+        <h3>Product 3</h3>
+        <p>$39.99</p>
+        <div class="product-buttons">
+          <button class="add-to-cart">Add to Cart</button>
+          <button class="buy-now">Buy Now</button>
+        </div>
+      </div>
+      <!-- Add more products if needed -->
+    </div>
+  </section>
+
+  <!-- Footer / About -->
+  <footer class="footer" id="about">
+    <section id="about-section" class="about">
+      <h2>About Luminark</h2>
+      <p>
+        Luminark is dedicated to bringing you premium, handcrafted products designed to add elegance and warmth to your space. Each item is carefully curated to combine functionality with aesthetic appeal. 
+        Our mission is to create a timeless collection that resonates with sophistication. Explore our collection and experience the perfect blend of tradition and modern elegance.
+      </p>
+    </section>
+    <div class="contact-info">
+      <a href="tel:+919876543210" class="contact-link phone">
+        <img src="https://cdn-icons-png.flaticon.com/512/724/724664.png" alt="Phone" class="icon"> +91 98765 43210
+      </a>
+      <a href="https://instagram.com/luminark" target="_blank" class="contact-link instagram">
+        <img src="https://cdn-icons-png.flaticon.com/512/1384/1384063.png" alt="Instagram" class="icon"> @luminark
+      </a>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

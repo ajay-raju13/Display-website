@@ -1,0 +1,287 @@
+/* Reset and base */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background: linear-gradient(to bottom, #a67850, #7b4d32);
+  color: #fff;
+  overflow-x: hidden;
+  min-height: 100vh;
+  padding-bottom: 100px; /* space for fixed footer */
+}
+
+/* Navbar */
+.navbar {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: rgba(255,255,255,0.05);
+  padding: 12px 20px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+  z-index: 1000;
+}
+
+.navbar-spacer {
+  height: 60px;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 1.5em;
+  font-weight: 700;
+  color: #f5e6d3;
+}
+
+.logo-img {
+  width: 45px;
+  height: 45px;
+  margin-right: 8px;
+  border-radius: 6px;
+  transition: transform 0.3s ease;
+}
+
+.logo-img:hover {
+  transform: rotate(-10deg) scale(1.05);
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 20px;
+}
+
+.nav-links a {
+  text-decoration: none;
+  color: #fff;
+  font-weight: 600;
+  transition: color 0.3s ease, transform 0.2s ease;
+}
+
+.nav-links a:hover {
+  color: #f5e6d3;
+  transform: scale(1.1);
+}
+
+/* Cart notification */
+.cart-count {
+  background-color: #ff6b6b;
+  color: white;
+  border-radius: 50%;
+  padding: 2px 7px;
+  font-size: 0.8em;
+  margin-left: 5px;
+}
+
+/* Cart header */
+.cart-header {
+  text-align: center;
+  margin: 30px 10px 20px;
+}
+
+.cart-header h1 {
+  font-size: 2em;
+  color: #f5e6d3;
+  text-shadow: 1px 1px 5px rgba(0,0,0,0.5);
+}
+
+.cart-header p {
+  font-size: 1em;
+  margin-bottom: 15px;
+}
+
+.buy-all-button {
+  background-color: #f5e6d3;
+  color: black;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 8px;
+  font-size: 1em;
+  cursor: pointer;
+  font-weight: 600;
+  transition: transform 0.3s ease, background 0.3s ease, box-shadow 0.3s ease;
+}
+
+.buy-all-button:hover {
+  background-color: #e8d3b0;
+  transform: scale(1.05);
+  box-shadow: 0 6px 12px rgba(0,0,0,0.4);
+}
+
+/* Cart section */
+.cart-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
+}
+
+/* Empty cart message */
+#empty-cart {
+  font-size: 1.5em;
+  color: #f5e6d3;
+  text-align: center;
+  margin-top: 50px;
+  animation: fadeInScale 1s ease forwards;
+}
+
+/* Cart items list */
+.cart-grid {
+  display: flex;
+  flex-direction: column;
+  width: 95%;
+  max-width: 700px;
+  gap: 10px;
+}
+
+.cart-item {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: rgba(255,255,255,0.1);
+  border-radius: 10px;
+  padding: 10px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.cart-item:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 10px rgba(0,0,0,0.3);
+}
+
+.cart-item img {
+  width: 70px;
+  height: 70px;
+  border-radius: 6px;
+  margin-right: 15px;
+}
+
+.product-info {
+  flex-grow: 1;
+}
+
+.product-info h3 {
+  font-size: 1em;
+  margin-bottom: 5px;
+  color: #f5e6d3;
+}
+
+.product-info p {
+  font-size: 0.9em;
+  color: #f5e6d3;
+}
+
+/* Buttons inside cart items */
+.card-buttons {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+
+.card-buttons button {
+  background-color: #f5e6d3;
+  color: black;
+  border: none;
+  padding: 6px 12px;
+  border-radius: 6px;
+  cursor: pointer;
+  font-weight: 500;
+  transition: transform 0.2s ease, background 0.3s ease;
+}
+
+.card-buttons button:hover {
+  background-color: #e8d3b0;
+  transform: scale(1.05);
+}
+
+/* Total price */
+.cart-total {
+  margin-top: 15px;
+  font-size: 1.2em;
+  font-weight: 600;
+  text-align: right;
+  width: 95%;
+  max-width: 700px;
+  color: #f5e6d3;
+}
+
+/* Footer */
+.footer {
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  background-color: #6e4a2c;
+  display: flex;
+  justify-content: center;
+  padding: 10px 0;
+  color: #f5e6d3;
+}
+
+/* Footer links */
+.contact-info {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 25px;
+}
+
+.contact-link {
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  color: #f5e6d3;
+  transition: transform 0.2s ease;
+}
+
+.contact-link:hover {
+  transform: scale(1.05);
+}
+
+/* Icons */
+.icon {
+  width: 20px;
+  height: 20px;
+}
+
+/* Animations */
+@keyframes fadeInScale {
+  from {opacity: 0; transform: scale(0.9);}
+  to {opacity: 1; transform: scale(1);}
+}
+
+/* Responsive */
+@media only screen and (max-width: 600px) {
+  .cart-item {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  .card-buttons {
+    flex-direction: row;
+    width: 100%;
+    justify-content: flex-end;
+  }
+  .card-buttons button {
+    flex: 1;
+  }
+  .cart-total {
+    text-align: right;
+    font-size: 1.1em;
+  }
+  .buy-all-button {
+    width: 90%;
+  }
+  .navbar-spacer { height: 70px; }
+}

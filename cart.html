@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Cart - Luminark</title>
+  <link rel="stylesheet" href="cstyle.css">
+</head>
+<body>
+  <!-- Navbar -->
+  <nav class="navbar">
+    <div class="logo">
+      <img src="logo.png" alt="Luminark Logo" class="logo-img">
+      Luminark
+    </div>
+    <ul class="nav-links">
+      <li><a href="index.html#home">Home</a></li>
+      <li><a href="index.html#about">About</a></li>
+      <li><a href="cart.html" id="cart-link">Cart <span id="cart-count" class="cart-count">0</span></a></li>
+    </ul>
+  </nav>
+
+  <div class="navbar-spacer"></div>
+
+  <!-- Cart Header -->
+  <header class="cart-header">
+    <h1>Your Cart</h1>
+    <p>Review your selected products before purchase.</p>
+    <button id="buy-all" class="buy-all-button">Buy All</button>
+  </header>
+
+  <!-- Cart Section -->
+  <section class="cart-section">
+    <p id="empty-cart">Your cart is empty.</p>
+    <div class="cart-grid" id="cart-items"></div>
+    <div id="cart-total" class="cart-total">Total: $0.00</div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="contact-info">
+      <a href="tel:+919876543210" class="contact-link phone">
+        <img src="https://cdn-icons-png.flaticon.com/512/724/724664.png" alt="Phone" class="icon"> +91 98765 43210
+      </a>
+      <a href="https://instagram.com/luminark" target="_blank" class="contact-link instagram">
+        <img src="https://cdn-icons-png.flaticon.com/512/1384/1384063.png" alt="Instagram" class="icon"> @luminark
+      </a>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
